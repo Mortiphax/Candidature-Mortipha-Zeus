@@ -76,11 +76,21 @@ ul.mot li svg{width:22px;height:22px;margin-top:3px}
 .road>li{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:26px 22px 20px;position:relative}
 .road>li::before{counter-increment:r;content:counter(r);position:absolute;top:-17px;left:20px;width:34px;height:34px;border-radius:50%;background:var(--acc);color:#fff;font:700 16px/34px Cinzel,serif;text-align:center;box-shadow:0 0 0 4px var(--bg2)}
 .road b{display:block;font-family:Cinzel,serif;font-size:21px;margin:0 0 10px;color:var(--gold)}
+.road i{display:block;font-family:Cinzel,serif;font-style:normal;font-size:19px;line-height:1.25;margin:-4px 0 14px}
+.road b{font-size:14px!important;font-family:Inter,sans-serif!important;margin:0 0 6px!important}
 .road ul{margin:0;padding-left:18px;display:grid;gap:8px}
 .gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .gal img{width:100%;height:100%;object-fit:cover;display:block}
 .usr.gone{display:none}
 @media(max-width:820px){.road{grid-template-columns:minmax(0,1fr);gap:28px}}
+.why{max-width:820px;margin:0 0 36px;padding:20px 24px;border-left:3px solid var(--gold);background:var(--bg);border-radius:0 14px 14px 0}
+.why h3{font-size:21px;margin:0 0 10px}.why p{margin:0 0 10px}.why p:last-child{margin:0}
+.mots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:28px}
+.mc{background:var(--bg2);border:1px solid var(--line);border-radius:18px;padding:22px 24px}
+.mc h3{font-size:20px;margin:0 0 10px;display:flex;gap:10px;align-items:center}
+.mc h3 svg{width:20px;height:20px;flex:none;color:var(--gold)}
+.mc p{margin:0;color:var(--ink)}
+@media(max-width:820px){.mots{grid-template-columns:minmax(0,1fr)}}
 footer{border-top:1px solid var(--line);color:var(--mut);font-size:14px;text-align:center}
 .alt{background:var(--bg2)}
 @media(max-width:820px){.hero .wrap,.grid2{grid-template-columns:minmax(0,1fr)}.emb{max-width:360px;order:-1}.hero .wrap{min-height:0}}
@@ -164,10 +174,11 @@ footer{border-top:1px solid var(--line);color:var(--mut);font-size:14px;text-ali
 
 <section class="band alt"><div class="wrap">
  <h2><small>Feuille de route</small>Objectifs</h2>
+ <div class="why"><h3>Pourquoi Zeus, et pas une autre équipe ?</h3><p>Dans une équipe qui marque plus de vingt buts par match, tout le monde regarde l'attaque. Mortipha veut que la défense de Zeus devienne aussi légendaire que ses buteurs.</p><p>Ailleurs, il serait le meilleur joueur d'une équipe moyenne. Chez Zeus, il doit être à la hauteur de dieux, et c'est exactement l'exigence qu'il cherche.</p></div>
  <ol class="road">
-  <li><b>Court terme</b><ul><li>S'intégrer à l'équipe et gagner sa place en défense.</li><li>Montrer sa polyvalence à gauche comme dans l'axe.</li><li>Apprendre à communiquer davantage sur le terrain.</li></ul></li>
-  <li><b>Moyen terme</b><ul><li>Devenir un titulaire indiscutable.</li><li>Former une ligne défensive solide et coordonnée.</li><li>Briller face à un grand attaquant rival.</li></ul></li>
-  <li><b>Long terme</b><ul><li>Être reconnu comme le meilleur défenseur du serveur.</li><li>Devenir un pilier et un exemple pour les futurs défenseurs.</li><li>Comprendre ce qui le pousse à se taire, et s'ouvrir un peu.</li></ul></li>
+  <li><b>Court terme</b><i>L'heure du jugement</i><ul><li>Prendre la place qui m'attend dans la défense de Zeus. Je ne demande rien : je viens accomplir ce qui doit l'être.</li><li>Atteindre une perfection silencieuse. Pas un placement de trop, pas un geste inutile : un dieu ne se trompe pas.</li><li>Faire comprendre à chaque attaquant qu'en entrant dans ma zone, il a déjà rencontré sa fin.</li></ul></li>
+  <li><b>Moyen terme</b><i>Le règne du silence</i><ul><li>Faire de la défense de Zeus un mur que le temps lui-même ne traverse pas, où chaque attaque s'éteint sans bruit.</li><li>Retirer à nos adversaires jusqu'à l'idée même de passer : qu'ils renoncent avant d'avoir essayé.</li><li>Rendre la défense de Zeus aussi légendaire que son attaque, pour que les dieux soient invincibles des deux côtés du terrain.</li></ul></li>
+  <li><b>Long terme</b><i>L'éternité de la fin</i><ul><li>Que le nom de Zeus ne soit jamais associé à une seule défaite tant que je garderai sa défense.</li><li>Laisser derrière moi une exigence que chaque défenseur de Zeus devra porter : ne jamais laisser passer, ne jamais faiblir.</li><li>Devenir une légende de Zeus : non pas un défenseur parmi d'autres, mais la fin que tous les attaquants redoutent.</li></ul></li>
  </ol>
 </div></section>
 
@@ -193,12 +204,10 @@ footer{border-top:1px solid var(--line);color:var(--mut);font-size:14px;text-ali
 </div></section>
 
 
-<section class="band"><div class="wrap grid2">
- <div>
-  <h2><small>Pourquoi moi</small>Motivations</h2>
-  <ul class="mot"><li><svg viewBox="0 0 24 24" style="color:var(--gold)"><use href="#bolt"/></svg><span>Incarner un défenseur avec une vraie personnalité, mystérieux et intimidant.</span></li><li><svg viewBox="0 0 24 24" style="color:var(--gold)"><use href="#bolt"/></svg><span>Développer un personnage qui évolue au fil des matchs et des rivalités.</span></li><li><svg viewBox="0 0 24 24" style="color:var(--gold)"><use href="#bolt"/></svg><span>Apporter de la solidité et du sérieux à l'équipe Zeus.</span></li><li><svg viewBox="0 0 24 24" style="color:var(--gold)"><use href="#bolt"/></svg><span>M'investir sur la durée dans le RP du serveur Raiden.</span></li></ul>
- </div>
- <div class="card">
+<section class="band"><div class="wrap">
+ <h2><small>Pourquoi moi</small>Motivations</h2>
+ <div class="mots"><div class="mc"><h3><svg viewBox="0 0 24 24"><use href="#bolt"/></svg>Donner un visage à la défense de Zeus</h3><p>Tout le monde parle des buts de Zeus. Je veux qu'on parle aussi de ceux qu'elle n'encaisse jamais. Mortipha est là pour faire de la défense de Zeus une légende à part entière, avec un personnage reconnaissable que les attaquants du serveur apprendront à redouter.</p></div><div class="mc"><h3><svg viewBox="0 0 24 24"><use href="#bolt"/></svg>Jouer un personnage qui marque</h3><p>Un défenseur silencieux, froid, qui ne célèbre rien et ne parle presque jamais : c'est un personnage rare, et c'est ce qui me plaît. Je veux le faire vivre avec cohérence, dans ses gestes, ses regards et ses rares paroles, pour qu'il laisse une vraie impression à ceux qui le croisent.</p></div><div class="mc"><h3><svg viewBox="0 0 24 24"><use href="#bolt"/></svg>Créer des rivalités</h3><p>Chaque grand attaquant du serveur mérite un adversaire à sa hauteur. Je veux construire des rivalités RP avec les meilleurs buteurs des autres équipes : des duels attendus, des revanches, des histoires qui donnent du sens à chaque match contre Zeus.</p></div><div class="mc"><h3><svg viewBox="0 0 24 24"><use href="#bolt"/></svg>Être à la hauteur de l'exigence de Zeus</h3><p>Rejoindre la meilleure équipe du serveur, c'est accepter une pression constante. Je veux m'investir sérieusement, être présent aux entraînements et aux matchs, et faire grandir mon personnage au rythme de l'équipe, sans jamais rester en retrait.</p></div></div>
+ <div class="card eng">
   <h2><small>Engagement</small>Ce que j'apporte</h2>
   <ul class="mot"><li><svg viewBox="0 0 24 24" style="color:var(--gold)"><use href="#bolt"/></svg><span>Présence aux entraînements et aux matchs RP.</span></li><li><svg viewBox="0 0 24 24" style="color:var(--gold)"><use href="#bolt"/></svg><span>Polyvalence : défenseur gauche ou central selon les besoins.</span></li><li><svg viewBox="0 0 24 24" style="color:var(--gold)"><use href="#bolt"/></svg><span>Respect du règlement et du staff.</span></li><li><svg viewBox="0 0 24 24" style="color:var(--gold)"><use href="#bolt"/></svg><span>Un RP cohérent, sérieux et immersif.</span></li></ul>
   <p class="sign">— Mortipha</p>
